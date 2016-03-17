@@ -8,7 +8,7 @@
 <body>
 
 <label for="male">Amount</label>
-<input type="number" name="amount" id="amount" ><br>
+<input type="number" name="amount" id="amount"><br>
 
 <!-- net to seller = amount - consignment fee - prep fee
 Consignment Rate = 19.5%
@@ -23,8 +23,27 @@ Prep Fee:
 <p>Net to Seller: <span id="netToSeller"></span></p>
 
 <script type="text/javascript">
+  $(document).ready($("#amount").change(function() {
+    var amount = parseInt($("#amount").val());
+    var $net = $("#netToSeller");
+    var consignmentFee = amount * .195
+    var prepFee;
 
+    if (amount <= 2500) {
+      prepFee = 99;
+    } else if (amount <= 5000) {
+      prepFee = 199;
+    } else if (amount <= 13000) {
+      prepFee = 299;
+    } else {
+      prepFee = 399;
+    }
 
+    var total = amount - prepFee - consignmentFee; 
+
+    $net.empty();
+    $net.append(total);
+  }));
 </script>
 </body>
 
