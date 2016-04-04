@@ -9,7 +9,7 @@ FIZZBUZZ.... *Kidding of course*
 
 ```
 $ git clone git@github.com:{YOUR-USERNAME}/code-tests.git
-$ git remote add -u master https://github.com/{YOUR-USERNAME}/code-tests.git
+$ git remote add origin https://github.com/{YOUR-USERNAME}/code-tests.git
 $ git checkout -b {YOUR-USERNAME}
 ```
   * Create your solutions inside of the project directory.
@@ -18,5 +18,4 @@ $ git checkout -b {YOUR-USERNAME}
 ```
 $ git push -u origin {YOUR-USERNAME}
 ```
-
 Submit a pull request to https://github.com/crownandcaliber/code-tests from your new branch.
