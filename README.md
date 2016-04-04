@@ -9,7 +9,7 @@ FIZZBUZZ.... *Kidding of course*
 
 ```
 $ git clone git@github.com:{YOUR-USERNAME}/code-tests.git
-$ git remote add -u master https://github.com/{YOUR-USERNAME}}/code-tests.git
+$ git remote add -u master https://github.com/{YOUR-USERNAME}/code-tests.git
 $ git checkout -b {YOUR-USERNAME}
 ```
   * Create your solutions inside of the project directory.
